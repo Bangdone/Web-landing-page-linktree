@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyas Tri Hardono - Link </title>
+    <!-- Favicon SVG Custom -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
+    <meta name="description" content="Temukan semua link sosial media dan kontak saya di satu tempat yang elegan dan profesional">
+    <meta name="keywords" content="landing page, linktree, portfolio, sosial media, professional">
+    <meta name="author" content="dozzz.com">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="MyLink - Profesional Landing Page">
+    <meta property="og:description" content="Temukan semua link sosial media dan kontak saya di satu tempat">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS dengan Dark Mode -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        .slide-up {
+            animation: slideUp 0.6s ease-out;
+        }
+        
+        .bounce-in {
+            animation: bounceIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% { 
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% { 
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            100% { 
+                transform: scale(1);
+            }
+        }
+        
+        .theme-transition {
+            transition: all 0.3s ease;
+        }
+        
+        /* Smooth transitions for all elements */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="theme-transition bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-md">
+        <!-- Header -->
+        <header class="text-center mb-8 fade-in">
+            <!-- Theme Toggle -->
+            <div class="flex justify-end mb-4">
+                <button id="themeToggle" class="p-3 rounded-full bg-white dark:bg-gray-700 shadow-lg theme-transition hover:shadow-xl transform hover:scale-110">
+                    <i class="fas fa-moon text-gray-700 dark:text-yellow-400 text-lg"></i>
+                </button>
+            </div>
+            
+            <!-- Profile -->
+            <div class="bounce-in">
+                <img src="ilyas.png" 
+                     alt="Profile" 
+                     class="w-30 h-30 rounded-full mx-auto border-4 border-white dark:border-gray-600 shadow-lg">
+            </div>
+            
+            <h1 class="text-2xl font-bold mt-4 text-gray-800 dark:text-white slide-up">ILYAS TRI HARDONO</h1>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 slide-up">Web developer & UI-UX Designer</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-1 slide-up">Welcome to my digital space! Selengkapnya bisa cek di bawah ✨</p>
+            
+            <!-- Date & Time Display -->
+            <div id="date-time" class="text-xs text-gray-500 dark:text-gray-400 mt-3 slide-up font-mono bg-white dark:bg-gray-800 py-2 px-3 rounded-lg inline-block shadow-sm"></div>
+        </header>
+
+        <!-- Links -->
+        <main class="space-y-4">
+            <!-- Website -->
+            <a href="https://donzzz.com/" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-globe text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Personal Website</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Explore portfolio saya</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- build.donzzz.com -->
+            <a href="https://build.donzzz.com/" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-globe text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Build.donzzz.com</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Bangun Website bisnis anda dengan mudah</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Contact -->
+            <a href="Mailto:ilyastrihardono.3@gmail.com" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group delay-500">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-envelope text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">Email</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Email seputar bisnis</p>
+                    </div>
+                </div>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/bangdone___/" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group delay-100">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-pink-500 to-red-500 rounded-full flex items-center justify-center mr-3">
+                        <i class="fab fa-instagram text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors">Instagram</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Buka Instagram saya </p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@bangdone1630" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group delay-200">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mr-3">
+                        <i class="fab fa-youtube text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">YouTube</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Buka Youtube saya</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/ilyas-tri-hardono-511545389/" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group delay-300">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center mr-3">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">LinkedIn</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Buka LinkedIn saya</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/Bangdone" class="block p-4 bg-white dark:bg-gray-700 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 theme-transition slide-up group delay-400">
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-gradient-to-r from-gray-700 to-gray-900 rounded-full flex items-center justify-center mr-3">
+                        <i class="fab fa-github text-white"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-gray-800 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">GitHub</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300">Buka Github saya</p>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 fade-in">
+            <p class="text-gray-500 dark:text-gray-400 text-sm">
+                &copy; 2025 Donzz.com All rights reserved.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        // Check for saved theme or prefer color scheme
+        const savedTheme = localStorage.getItem('theme') || 
+                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        // Apply saved theme
+        if (savedTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            themeIcon.classList.remove('fa-moon');
+            themeIcon.classList.add('fa-sun');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.classList.remove('fa-sun');
+            themeIcon.classList.add('fa-moon');
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            // Toggle dark class
+            document.documentElement.classList.toggle('dark');
+            
+            // Update icon and save preference
+            if (document.documentElement.classList.contains('dark')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+                console.log('Switched to dark mode');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+                console.log('Switched to light mode');
+            }
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all animated elements
+        document.querySelectorAll('.slide-up, .fade-in, .bounce-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Date & Time Function
+        function updateDateTime() {
+            var today = new Date();
+            var days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+            var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    
+            var day = days[today.getDay()];
+            var date = today.getDate();
+            var month = months[today.getMonth()];
+            var year = today.getFullYear();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+    
+            minute = (minute < 10) ? "0" + minute : minute;
+            second = (second < 10) ? "0" + second : second;
+
+            var formattedDateTime = day + ", " + date + " " + month + " " + year + " - " + hour + ":" + minute + ":" + second;
+    
+            document.getElementById('date-time').innerHTML = formattedDateTime;
+        }
+
+        // Initialize and update every second
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        // Debug info
+        console.log('Dark mode system preference:', window.matchMedia('(prefers-color-scheme: dark)').matches);
+        console.log('Saved theme:', localStorage.getItem('theme'));
+    </script>
+</body>
+</html>
